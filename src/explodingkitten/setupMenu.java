@@ -30,6 +30,7 @@ public class setupMenu extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jFormattedTextField1 = new javax.swing.JFormattedTextField();
         jLabel2 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -38,7 +39,8 @@ public class setupMenu extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton5.setFont(new java.awt.Font("AR CHRISTY", 0, 24)); // NOI18N
-        jButton5.setText("Next");
+        jButton5.setText("Cancel");
+        jButton5.setToolTipText("");
         jButton5.setActionCommand("back");
         jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -47,7 +49,7 @@ public class setupMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(510, 380, 180, 40);
+        jButton5.setBounds(20, 380, 180, 40);
 
         jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
         jFormattedTextField1.setToolTipText("");
@@ -65,6 +67,18 @@ public class setupMenu extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(310, 180, 190, 40);
 
+        jButton6.setFont(new java.awt.Font("AR CHRISTY", 0, 24)); // NOI18N
+        jButton6.setText("Next");
+        jButton6.setActionCommand("back");
+        jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton6);
+        jButton6.setBounds(510, 380, 180, 40);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/setup.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 790, 430);
@@ -74,11 +88,22 @@ public class setupMenu extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        startMenu s = new startMenu();
+        s.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        gameGUI g = new gameGUI();
+        g.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,6 +143,7 @@ public class setupMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -37,8 +37,12 @@ public class settings extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("AR CHRISTY", 0, 24)); // NOI18N
         jButton4.setText("back");
-        jButton4.setActionCommand("back");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4);
         jButton4.setBounds(460, 350, 180, 40);
 
@@ -48,6 +52,13 @@ public class settings extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        startMenu s = new startMenu();
+        s.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
