@@ -16,7 +16,8 @@ public class ExplodingKitten {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        startMenu s = new startMenu();
+        //startMenu s = new startMenu();
+        setupMenu s = new setupMenu();
         s.setVisible(true);
     }
     

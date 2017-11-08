@@ -13,9 +13,15 @@ public class gameGUI extends javax.swing.JFrame {
 
     /**
      * Creates new form startMenu
+     * @param pCount
+     * @param pName
+     * @param AI
+     * @param diff
      */
-    public gameGUI() {
+    public gameGUI(int pCount,String[] pName, boolean AI, int diff) {
+        
         initComponents();
+        jLabel2.setText(pName[0]);
     }
 
     /**
@@ -104,7 +110,7 @@ public class gameGUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new gameGUI().setVisible(true);
+                //new gameGUI().setVisible(true);
             }
         });
     }
